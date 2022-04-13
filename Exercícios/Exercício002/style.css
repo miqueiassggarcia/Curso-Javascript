@@ -1,0 +1,35 @@
+body{
+    background: rgb(52, 29, 255);
+}
+h1 {
+    font: normal 30pt Arial;
+    text-align: center;
+    color: white;
+}
+section {
+    margin: auto;
+    display: block;
+    width: 500px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.452);
+    border-radius: 10px;
+
+}
+div {
+        font: normal 15pt Arial;
+}
+input {
+    margin-bottom: 10px;
+    font:normal 15pt Arial;
+}
+input#txtano {
+    width: 200px;
+    margin: 2px;
+}
+footer {
+    font: normal 15pt Arial;
+    font-style: italic;
+    text-align: center; 
+    color: white;
+}

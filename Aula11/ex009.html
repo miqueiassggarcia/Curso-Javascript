@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nacionalidade</title>
+    <style>
+        h1 {
+            font: normal 30pt Arial;
+            text-align: center;
+        }
+        input#txtnac {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual a sua nacionalidade</h1>
+    <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="Nacional()">
+    <div id="nacio"></div>
+    <script>
+        function Nacional(){
+            var ncn = window.document.getElementById('txtnac').value
+            var lug = window.document.getElementById('nacio')
+            if(ncn.toUpperCase() =='BRASIL'){
+                lug.innerHTML = `<p>Você é <strong>brasileiro</strong></p>`
+            }
+            else {
+                lug.innerHTML = `<p>Você é <strong>estrangeiro</strong></p>`
+             }
+        }    
+    </script>
+</body>
+</html>
